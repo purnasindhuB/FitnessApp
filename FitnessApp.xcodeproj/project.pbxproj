@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47FC29052E1872DC00DF1EE0 /* ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC29032E1872DC00DF1EE0 /* ProgramTableViewCell.swift */; };
+		47FC29062E1872DC00DF1EE0 /* ProgramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47FC29042E1872DC00DF1EE0 /* ProgramTableViewCell.xib */; };
+		47FC29092E18879200DF1EE0 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC29082E18879200DF1EE0 /* Program.swift */; };
+		47FC290B2E1887DA00DF1EE0 /* Excercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC290A2E1887DA00DF1EE0 /* Excercise.swift */; };
+		47FC290D2E188B5D00DF1EE0 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC290C2E188B5D00DF1EE0 /* WorkoutViewController.swift */; };
+		E1A30AE829F65A5C000486C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A30AE729F65A5C000486C6 /* AppDelegate.swift */; };
+		E1A30AEA29F65A5C000486C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A30AE929F65A5C000486C6 /* SceneDelegate.swift */; };
+		E1A30AEC29F65A5C000486C6 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A30AEB29F65A5C000486C6 /* DashboardViewController.swift */; };
+		E1A30AEF29F65A5C000486C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A30AED29F65A5C000486C6 /* Main.storyboard */; };
+		E1A30AF129F65A64000486C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A30AF029F65A64000486C6 /* Assets.xcassets */; };
+		E1A30AF429F65A64000486C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A30AF229F65A64000486C6 /* LaunchScreen.storyboard */; };
+		E1A30B0029F69537000486C6 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1A30AFE29F69537000486C6 /* Rubik-BlackItalic.ttf */; };
+		E1A30B0129F69537000486C6 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1A30AFF29F69537000486C6 /* Rubik-Black.ttf */; };
+		E1A30B0329F69544000486C6 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1A30B0229F69544000486C6 /* Rubik-Bold.ttf */; };
+		E1A30B0629F69559000486C6 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1A30B0429F69559000486C6 /* Rubik-MediumItalic.ttf */; };
+		E1A30B0729F69559000486C6 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1A30B0529F69559000486C6 /* Rubik-Medium.ttf */; };
+		E1A30B0929F69562000486C6 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1A30B0829F69561000486C6 /* Rubik-Regular.ttf */; };
+		E1A30B0B29F69721000486C6 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1A30B0A29F69721000486C6 /* Rubik-SemiBold.ttf */; };
+		E1A30B0D29F69870000486C6 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A30B0C29F69870000486C6 /* Typography.swift */; };
+		E1A30B3029F749D4000486C6 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A30B2F29F749D4000486C6 /* ShadowButton.swift */; };
+		E1A30B3229F74A71000486C6 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A30B3129F74A71000486C6 /* Extension+UIColor.swift */; };
+		E1A30B3429F74A9A000486C6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A30B3329F74A9A000486C6 /* Colors.xcassets */; };
+		E1A30B9529F88432000486C6 /* trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = E1A30B9429F88432000486C6 /* trophy.json */; };
+		E1A30B9729F8843A000486C6 /* jumpingjack.json in Resources */ = {isa = PBXBuildFile; fileRef = E1A30B9629F8843A000486C6 /* jumpingjack.json */; };
+		E1A30B9929F88446000486C6 /* pushups.json in Resources */ = {isa = PBXBuildFile; fileRef = E1A30B9829F88446000486C6 /* pushups.json */; };
+		E1A30B9B29F88516000486C6 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A30B9A29F88516000486C6 /* RingView.swift */; };
+		E1A30B9E29F887C4000486C6 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A30B9D29F887C4000486C6 /* BarChartView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47FC29032E1872DC00DF1EE0 /* ProgramTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTableViewCell.swift; sourceTree = "<group>"; };
+		47FC29042E1872DC00DF1EE0 /* ProgramTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramTableViewCell.xib; sourceTree = "<group>"; };
+		47FC29082E18879200DF1EE0 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		47FC290A2E1887DA00DF1EE0 /* Excercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excercise.swift; sourceTree = "<group>"; };
+		47FC290C2E188B5D00DF1EE0 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		E1A30AE429F65A5C000486C6 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A30AE729F65A5C000486C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1A30AE929F65A5C000486C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1A30AEB29F65A5C000486C6 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		E1A30AEE29F65A5C000486C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1A30AF029F65A64000486C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1A30AF329F65A64000486C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1A30AF529F65A64000486C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A30AFE29F69537000486C6 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E1A30AFF29F69537000486C6 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		E1A30B0229F69544000486C6 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		E1A30B0429F69559000486C6 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E1A30B0529F69559000486C6 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		E1A30B0829F69561000486C6 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		E1A30B0A29F69721000486C6 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		E1A30B0C29F69870000486C6 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		E1A30B2F29F749D4000486C6 /* ShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
+		E1A30B3129F74A71000486C6 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		E1A30B3329F74A9A000486C6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E1A30B9429F88432000486C6 /* trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trophy.json; sourceTree = "<group>"; };
+		E1A30B9629F8843A000486C6 /* jumpingjack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jumpingjack.json; sourceTree = "<group>"; };
+		E1A30B9829F88446000486C6 /* pushups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pushups.json; sourceTree = "<group>"; };
+		E1A30B9A29F88516000486C6 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		E1A30B9D29F887C4000486C6 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1A30AE129F65A5C000486C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47FC29072E18877C00DF1EE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47FC29082E18879200DF1EE0 /* Program.swift */,
+				47FC290A2E1887DA00DF1EE0 /* Excercise.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1A30ADB29F65A5C000486C6 = {
+			isa = PBXGroup;
+			children = (
+				E1A30AE629F65A5C000486C6 /* FitnessApp */,
+				E1A30AE529F65A5C000486C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1A30AE529F65A5C000486C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1A30AE429F65A5C000486C6 /* FitnessApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1A30AE629F65A5C000486C6 /* FitnessApp */ = {
+			isa = PBXGroup;
+			children = (
+				E1A30B9C29F8851C000486C6 /* Extensions */,
+				E1A30B2E29F749C0000486C6 /* Components */,
+				E1A30AFC29F6951A000486C6 /* Resources */,
+				E1A30AFB29F69485000486C6 /* Design */,
+				E1A30AE729F65A5C000486C6 /* AppDelegate.swift */,
+				E1A30AE929F65A5C000486C6 /* SceneDelegate.swift */,
+				E1A30AEB29F65A5C000486C6 /* DashboardViewController.swift */,
+				47FC29032E1872DC00DF1EE0 /* ProgramTableViewCell.swift */,
+				47FC29072E18877C00DF1EE0 /* Model */,
+				47FC29042E1872DC00DF1EE0 /* ProgramTableViewCell.xib */,
+				E1A30AED29F65A5C000486C6 /* Main.storyboard */,
+				47FC290C2E188B5D00DF1EE0 /* WorkoutViewController.swift */,
+				E1A30AF029F65A64000486C6 /* Assets.xcassets */,
+				E1A30B3329F74A9A000486C6 /* Colors.xcassets */,
+				E1A30AF229F65A64000486C6 /* LaunchScreen.storyboard */,
+				E1A30AF529F65A64000486C6 /* Info.plist */,
+			);
+			path = FitnessApp;
+			sourceTree = "<group>";
+		};
+		E1A30AFB29F69485000486C6 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				E1A30B0C29F69870000486C6 /* Typography.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		E1A30AFC29F6951A000486C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1A30B9329F88423000486C6 /* Lottie */,
+				E1A30AFD29F69523000486C6 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1A30AFD29F69523000486C6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E1A30AFF29F69537000486C6 /* Rubik-Black.ttf */,
+				E1A30AFE29F69537000486C6 /* Rubik-BlackItalic.ttf */,
+				E1A30B0229F69544000486C6 /* Rubik-Bold.ttf */,
+				E1A30B0529F69559000486C6 /* Rubik-Medium.ttf */,
+				E1A30B0429F69559000486C6 /* Rubik-MediumItalic.ttf */,
+				E1A30B0829F69561000486C6 /* Rubik-Regular.ttf */,
+				E1A30B0A29F69721000486C6 /* Rubik-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E1A30B2E29F749C0000486C6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E1A30B2F29F749D4000486C6 /* ShadowButton.swift */,
+				E1A30B9A29F88516000486C6 /* RingView.swift */,
+				E1A30B9D29F887C4000486C6 /* BarChartView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E1A30B9329F88423000486C6 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				E1A30B9429F88432000486C6 /* trophy.json */,
+				E1A30B9629F8843A000486C6 /* jumpingjack.json */,
+				E1A30B9829F88446000486C6 /* pushups.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		E1A30B9C29F8851C000486C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1A30B3129F74A71000486C6 /* Extension+UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1A30AE329F65A5C000486C6 /* FitnessApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A30AF829F65A64000486C6 /* Build configuration list for PBXNativeTarget "FitnessApp" */;
+			buildPhases = (
+				E1A30AE029F65A5C000486C6 /* Sources */,
+				E1A30AE129F65A5C000486C6 /* Frameworks */,
+				E1A30AE229F65A5C000486C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitnessApp;
+			productName = FitnessApp;
+			productReference = E1A30AE429F65A5C000486C6 /* FitnessApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1A30ADC29F65A5C000486C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E1A30AE329F65A5C000486C6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = E1A30ADF29F65A5C000486C6 /* Build configuration list for PBXProject "FitnessApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1A30ADB29F65A5C000486C6;
+			productRefGroup = E1A30AE529F65A5C000486C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1A30AE329F65A5C000486C6 /* FitnessApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1A30AE229F65A5C000486C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FC29062E1872DC00DF1EE0 /* ProgramTableViewCell.xib in Resources */,
+				E1A30AF429F65A64000486C6 /* LaunchScreen.storyboard in Resources */,
+				E1A30B0329F69544000486C6 /* Rubik-Bold.ttf in Resources */,
+				E1A30B3429F74A9A000486C6 /* Colors.xcassets in Resources */,
+				E1A30AF129F65A64000486C6 /* Assets.xcassets in Resources */,
+				E1A30B0029F69537000486C6 /* Rubik-BlackItalic.ttf in Resources */,
+				E1A30B9529F88432000486C6 /* trophy.json in Resources */,
+				E1A30B9929F88446000486C6 /* pushups.json in Resources */,
+				E1A30B0929F69562000486C6 /* Rubik-Regular.ttf in Resources */,
+				E1A30B0629F69559000486C6 /* Rubik-MediumItalic.ttf in Resources */,
+				E1A30B0129F69537000486C6 /* Rubik-Black.ttf in Resources */,
+				E1A30B9729F8843A000486C6 /* jumpingjack.json in Resources */,
+				E1A30B0B29F69721000486C6 /* Rubik-SemiBold.ttf in Resources */,
+				E1A30AEF29F65A5C000486C6 /* Main.storyboard in Resources */,
+				E1A30B0729F69559000486C6 /* Rubik-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1A30AE029F65A5C000486C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FC290D2E188B5D00DF1EE0 /* WorkoutViewController.swift in Sources */,
+				47FC29092E18879200DF1EE0 /* Program.swift in Sources */,
+				E1A30AEC29F65A5C000486C6 /* DashboardViewController.swift in Sources */,
+				E1A30B3029F749D4000486C6 /* ShadowButton.swift in Sources */,
+				47FC29052E1872DC00DF1EE0 /* ProgramTableViewCell.swift in Sources */,
+				47FC290B2E1887DA00DF1EE0 /* Excercise.swift in Sources */,
+				E1A30AE829F65A5C000486C6 /* AppDelegate.swift in Sources */,
+				E1A30B0D29F69870000486C6 /* Typography.swift in Sources */,
+				E1A30B9B29F88516000486C6 /* RingView.swift in Sources */,
+				E1A30AEA29F65A5C000486C6 /* SceneDelegate.swift in Sources */,
+				E1A30B3229F74A71000486C6 /* Extension+UIColor.swift in Sources */,
+				E1A30B9E29F887C4000486C6 /* BarChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1A30AED29F65A5C000486C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A30AEE29F65A5C000486C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1A30AF229F65A64000486C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A30AF329F65A64000486C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1A30AF629F65A64000486C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1A30AF729F65A64000486C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1A30AF929F65A64000486C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FitnessApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fullstacktuts.com.FitnessApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E1A30AFA29F65A64000486C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FitnessApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fullstacktuts.com.FitnessApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1A30ADF29F65A5C000486C6 /* Build configuration list for PBXProject "FitnessApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A30AF629F65A64000486C6 /* Debug */,
+				E1A30AF729F65A64000486C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A30AF829F65A64000486C6 /* Build configuration list for PBXNativeTarget "FitnessApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A30AF929F65A64000486C6 /* Debug */,
+				E1A30AFA29F65A64000486C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1A30ADC29F65A5C000486C6 /* Project object */;
+}
