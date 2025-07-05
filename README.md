@@ -32,8 +32,7 @@ An elegant, animation-rich iOS Fitness App built with Swift. This app leverages 
 ---
 ## 📸 Screenshots
 
-### 🏠 Dashboard View
-![Dashboard](https://github.com/purnasindhuB/FitnessApp/blob/main/Screenshot%202025-07-06%20at%202.27.28%20AM.png?raw=true)
+![Dashboard](https://github.com/purnasindhuB/FitnessApp/blob/main/FitnessApp/Assests/Screenshot%202025-07-06%20at%202.27.28%20AM.png?raw=true)
 
 
 ## 🛠️ Tech Stack
@@ -98,7 +97,7 @@ FitnessApp/
 
 
 ---
-   👤 Author
+   ## 👤 Author
 Purnasindhu Bachu
 📧 purnasindhubachu@gmail.com
 🔗 GitHub
