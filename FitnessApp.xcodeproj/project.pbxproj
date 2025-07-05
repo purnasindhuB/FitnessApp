@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47A8ACBE2E197BB3008DE1B6 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 47A8ACBD2E197BB3008DE1B6 /* Lottie */; };
+		47A8ACC02E197BB3008DE1B6 /* Lottie-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 47A8ACBF2E197BB3008DE1B6 /* Lottie-Dynamic */; };
+		47A8ACC22E198843008DE1B6 /* WorkoutResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A8ACC12E198843008DE1B6 /* WorkoutResultsViewController.swift */; };
 		47FC29052E1872DC00DF1EE0 /* ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC29032E1872DC00DF1EE0 /* ProgramTableViewCell.swift */; };
 		47FC29062E1872DC00DF1EE0 /* ProgramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47FC29042E1872DC00DF1EE0 /* ProgramTableViewCell.xib */; };
 		47FC29092E18879200DF1EE0 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC29082E18879200DF1EE0 /* Program.swift */; };
@@ -37,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47A8ACC12E198843008DE1B6 /* WorkoutResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutResultsViewController.swift; sourceTree = "<group>"; };
 		47FC29032E1872DC00DF1EE0 /* ProgramTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTableViewCell.swift; sourceTree = "<group>"; };
 		47FC29042E1872DC00DF1EE0 /* ProgramTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramTableViewCell.xib; sourceTree = "<group>"; };
 		47FC29082E18879200DF1EE0 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A8ACBE2E197BB3008DE1B6 /* Lottie in Frameworks */,
+				47A8ACC02E197BB3008DE1B6 /* Lottie-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,11 +120,12 @@
 				E1A30AE729F65A5C000486C6 /* AppDelegate.swift */,
 				E1A30AE929F65A5C000486C6 /* SceneDelegate.swift */,
 				E1A30AEB29F65A5C000486C6 /* DashboardViewController.swift */,
+				47FC290C2E188B5D00DF1EE0 /* WorkoutViewController.swift */,
 				47FC29032E1872DC00DF1EE0 /* ProgramTableViewCell.swift */,
 				47FC29072E18877C00DF1EE0 /* Model */,
 				47FC29042E1872DC00DF1EE0 /* ProgramTableViewCell.xib */,
 				E1A30AED29F65A5C000486C6 /* Main.storyboard */,
-				47FC290C2E188B5D00DF1EE0 /* WorkoutViewController.swift */,
+				47A8ACC12E198843008DE1B6 /* WorkoutResultsViewController.swift */,
 				E1A30AF029F65A64000486C6 /* Assets.xcassets */,
 				E1A30B3329F74A9A000486C6 /* Colors.xcassets */,
 				E1A30AF229F65A64000486C6 /* LaunchScreen.storyboard */,
@@ -202,6 +209,10 @@
 			dependencies = (
 			);
 			name = FitnessApp;
+			packageProductDependencies = (
+				47A8ACBD2E197BB3008DE1B6 /* Lottie */,
+				47A8ACBF2E197BB3008DE1B6 /* Lottie-Dynamic */,
+			);
 			productName = FitnessApp;
 			productReference = E1A30AE429F65A5C000486C6 /* FitnessApp.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +241,9 @@
 				Base,
 			);
 			mainGroup = E1A30ADB29F65A5C000486C6;
+			packageReferences = (
+				47A8ACBC2E197BB3008DE1B6 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = E1A30AE529F65A5C000486C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,6 +286,7 @@
 				47FC290D2E188B5D00DF1EE0 /* WorkoutViewController.swift in Sources */,
 				47FC29092E18879200DF1EE0 /* Program.swift in Sources */,
 				E1A30AEC29F65A5C000486C6 /* DashboardViewController.swift in Sources */,
+				47A8ACC22E198843008DE1B6 /* WorkoutResultsViewController.swift in Sources */,
 				E1A30B3029F749D4000486C6 /* ShadowButton.swift in Sources */,
 				47FC29052E1872DC00DF1EE0 /* ProgramTableViewCell.swift in Sources */,
 				47FC290B2E1887DA00DF1EE0 /* Excercise.swift in Sources */,
@@ -504,6 +519,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47A8ACBC2E197BB3008DE1B6 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47A8ACBD2E197BB3008DE1B6 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47A8ACBC2E197BB3008DE1B6 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		47A8ACBF2E197BB3008DE1B6 /* Lottie-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47A8ACBC2E197BB3008DE1B6 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = "Lottie-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1A30ADC29F65A5C000486C6 /* Project object */;
 }

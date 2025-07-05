@@ -33,27 +33,131 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="zvI-cH-o3b" id="4vd-F3-Kqm"/>
-                        <segue destination="Opx-6d-dEa" kind="presentation" id="j4A-vM-NwU"/>
+                        <segue destination="Opx-6d-dEa" kind="presentation" identifier="WorkoutSegue" id="j4A-vM-NwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="59" y="-94"/>
         </scene>
-        <!--View Controller-->
+        <!--Workout View Controller-->
         <scene sceneID="g5A-dx-BTa">
             <objects>
-                <viewController id="Opx-6d-dEa" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Opx-6d-dEa" customClass="WorkoutViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nI8-rs-e22">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77Y-aT-3AP" customClass="RingView" customModule="FitnessApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="249.66666666666663" width="353" height="353"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVg-5z-ybi" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="101.66666666666669" y="101.33333333333334" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="68i-Zf-fmV"/>
+                                            <constraint firstAttribute="height" constant="150" id="pFS-yE-cE9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="aVg-5z-ybi" firstAttribute="centerY" secondItem="77Y-aT-3AP" secondAttribute="centerY" id="ARd-8g-hlr"/>
+                                    <constraint firstAttribute="width" secondItem="77Y-aT-3AP" secondAttribute="height" multiplier="1:1" id="GRZ-EL-OcQ"/>
+                                    <constraint firstItem="aVg-5z-ybi" firstAttribute="centerX" secondItem="77Y-aT-3AP" secondAttribute="centerX" id="SSl-L4-SXK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6RZ-rV-AaR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6RZ-rV-AaR" firstAttribute="trailing" secondItem="77Y-aT-3AP" secondAttribute="trailing" constant="20" id="2ub-Z3-zdK"/>
+                            <constraint firstItem="77Y-aT-3AP" firstAttribute="leading" secondItem="6RZ-rV-AaR" secondAttribute="leading" constant="20" id="gNI-fd-Szm"/>
+                            <constraint firstItem="77Y-aT-3AP" firstAttribute="centerY" secondItem="nI8-rs-e22" secondAttribute="centerY" id="wmE-wU-OL4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="aVg-5z-ybi" id="UXN-6T-l89"/>
+                        <outlet property="ringView" destination="77Y-aT-3AP" id="IOL-bE-vI3"/>
+                        <segue destination="VbW-OW-hau" kind="presentation" identifier="WorkoutResultsSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="wZ0-Cq-dAu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgj-GJ-VVW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="860" y="-94"/>
+        </scene>
+        <!--Workout Results View Controller-->
+        <scene sceneID="g2l-gv-bzh">
+            <objects>
+                <viewController id="VbW-OW-hau" customClass="WorkoutResultsViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6bK-iK-Ya6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZo-d0-dPv">
+                                <rect key="frame" x="25" y="291" width="343" height="270"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utL-Xg-6ii" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="131.66666666666666" y="30" width="80" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="PlZ-R9-m4x"/>
+                                            <constraint firstAttribute="height" constant="80" id="lHN-rC-ac8"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-7b-k7y">
+                                        <rect key="frame" x="111" y="135" width="121" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DR6-ew-oGZ" customClass="ShadowButton" customModule="FitnessApp" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="185.33333333333331" width="293" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="8b1-Ws-3vz"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitButtonTapped:" destination="VbW-OW-hau" eventType="touchUpInside" id="6gW-OE-rAr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="f3g-7b-k7y" firstAttribute="centerX" secondItem="IZo-d0-dPv" secondAttribute="centerX" id="0lc-7E-e5R"/>
+                                    <constraint firstAttribute="trailing" secondItem="DR6-ew-oGZ" secondAttribute="trailing" constant="25" id="8SQ-Do-zkO"/>
+                                    <constraint firstItem="utL-Xg-6ii" firstAttribute="top" secondItem="IZo-d0-dPv" secondAttribute="top" constant="30" id="JRR-qA-0uy"/>
+                                    <constraint firstItem="DR6-ew-oGZ" firstAttribute="leading" secondItem="IZo-d0-dPv" secondAttribute="leading" constant="25" id="MN0-Dc-x82"/>
+                                    <constraint firstItem="f3g-7b-k7y" firstAttribute="top" secondItem="utL-Xg-6ii" secondAttribute="bottom" constant="25" id="TUe-H3-mat"/>
+                                    <constraint firstItem="utL-Xg-6ii" firstAttribute="centerX" secondItem="IZo-d0-dPv" secondAttribute="centerX" id="XVl-bw-M42"/>
+                                    <constraint firstAttribute="height" constant="270" id="if5-aJ-hZ3"/>
+                                    <constraint firstItem="DR6-ew-oGZ" firstAttribute="top" secondItem="f3g-7b-k7y" secondAttribute="bottom" constant="30" id="z1R-W4-xE9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ULp-Cx-H4q"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69868178594680064" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ULp-Cx-H4q" firstAttribute="trailing" secondItem="IZo-d0-dPv" secondAttribute="trailing" constant="25" id="4ue-lw-f9W"/>
+                            <constraint firstItem="IZo-d0-dPv" firstAttribute="leading" secondItem="ULp-Cx-H4q" secondAttribute="leading" constant="25" id="e6D-5G-thw"/>
+                            <constraint firstItem="IZo-d0-dPv" firstAttribute="centerX" secondItem="6bK-iK-Ya6" secondAttribute="centerX" id="rfC-1U-V83"/>
+                            <constraint firstItem="IZo-d0-dPv" firstAttribute="centerY" secondItem="6bK-iK-Ya6" secondAttribute="centerY" id="uQ6-gP-aeO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="congratulationsLabel" destination="f3g-7b-k7y" id="Gny-vv-U9k"/>
+                        <outlet property="resultsView" destination="IZo-d0-dPv" id="09l-8v-Vf3"/>
+                        <outlet property="submitButton" destination="DR6-ew-oGZ" id="1SI-7r-VpP"/>
+                        <outlet property="trophyAnimationView" destination="utL-Xg-6ii" id="Zfe-6T-umB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2u-Ho-YoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="-94"/>
         </scene>
     </scenes>
     <resources>

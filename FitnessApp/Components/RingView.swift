@@ -2,21 +2,16 @@
 //  RingView.swift
 //  FitnessApp
 //
-/*
- MIT License
+//  Created by Purnasindhu-749 on 05/07/25.
+//
 
- Copyright (c) 2023 Fullstacktuts LLC
-
- Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
 
 import Foundation
 import UIKit
 
+protocol RingViewDelegate : AnyObject{
+    func animationDidEnd()
+}
 class RingView: UIView {
     
     var progress: CGFloat = CGFloat(0.5) {
@@ -38,7 +33,7 @@ class RingView: UIView {
     }
     let ringLayer: CAShapeLayer = CAShapeLayer()
     var action: (() -> Void)?
-    
+    weak var delegate : RingViewDelegate!
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         let circlePath: CGPath = UIBezierPath(ovalIn: CGRect(x: halfRingWidth, y: halfRingWidth, width: bounds.width - ringWidth, height: bounds.height - ringWidth)).cgPath
@@ -64,16 +59,29 @@ class RingView: UIView {
         gradientLayer.mask = ringLayer
         layer.addSublayer(gradientLayer)
     }
-
+    
+    func startAnimation (time:Int) {
+    let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.duration = CFTimeInterval(time)
+        animation.repeatCount = 1
+        animation.isRemovedOnCompletion = false
+        animation.fromValue = 0
+        animation.toValue = 1
+        animation.delegate = self
+        animation.timingFunction = CAMediaTimingFunction(name: .linear)
+        ringLayer.add(animation, forKey: nil)
+    }
 
 }
 
 extension RingView: CAAnimationDelegate {
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        if let action = action {
-            action()
-        }
+        print("Animation ended")
+        delegate.animationDidEnd()
+//        if let action = action {
+//            action()
+//        }
     }
     
 }
